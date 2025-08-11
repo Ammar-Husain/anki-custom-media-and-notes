@@ -1,3 +1,5 @@
+![screen-recording](./screen-recording.gif)
+
 ## Rationale
 
 I think the most powerfull feature of anki cloze note types is the ability to produce multiple cards from a single note easily, But this comes with 2 main downsides (in my opinion):
@@ -26,13 +28,13 @@ the syntax (rules) is pretty simple:
    `This text appears in all cards`.
 2. to make an extra appear in card number n, just write "Cn::" before the text, for example to add an extra that appear only in card3 you do `C3::This is card 3` (the C can be in uppercase or lowercase)
 3. the field is devidied into "extras", seperated by "|||" (triple pipe), e.g:<br>
-   `C1:: This is card number 1 ||| <br>
-C2:: This is card number 2 ||| <br>
-C3:: This is card number 3` <br>
+   `C1:: This is card number 1 |||
+C2:: This is card number 2 ||| 
+C3:: This is card number 3`
 
 4. to make an extra that appears in all cards beside cards specific extras, use `G::` (stands for "Global"), for example: <br>
-   `C1:: This is card 1 ||| <br>
-C2:: This is card 2 ||| <br>
+   `C1:: This is card 1 |||
+C2:: This is card 2 |||
 G:: This text appears in all cards `
 
 for the advanced cloze cards, the field "Media" works in the same way, it is for medias like images and videos, I made it a seperate field because I like to style my notes inside boxes and I don't want the media to go into the box, my [style.css](./style.css) for both the notes boxes and the media is also included.

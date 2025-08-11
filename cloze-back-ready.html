@@ -14,7 +14,7 @@
     const notes = orgNotes.split("|||");
     const activeCardRegex = new RegExp(`^C${cardOrd}::`, "i");
     for (let i = 0; i < notes.length; i++) {
-      note = notes[i].trim().replace(/^[<br>\s]+/, "");
+      note = notes[i].trim().replace(/^(<br>|\s)+/, "");
       if (
         (note && !orgNotes.match(/C\d+?::/i)) ||
         note.match(activeCardRegex) ||
