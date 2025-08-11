@@ -12,6 +12,12 @@ So to solve this issue I wrote this simple js [scripts](https://github.com/Ammar
 
 - I also made a [version](./image-occlusion-back.html) for "Image-Occlusion" note type.
 
+## Installation
+
+1. Open your note template.
+2. Delete any instances of "Back Extra".
+3. Append the content of the respective file.
+
 ## Usage
 
 the syntax (rules) is pretty simple:
@@ -19,7 +25,7 @@ the syntax (rules) is pretty simple:
 1. to make your extra appear in all child cards: just write it into "Back Extra" field, this works only when there are no other extras in the field, e.g.
    `This text appears in all cards`.
 2. to make you extra appear in card number n, just write "Cn::" before the text, for example to add an extra that appear only in card3 you do `C3::This is card 3` (the C can be in uppercase or lowercase)
-3. the field is devidied into "extras", seperated by "|||" (triple pipe), e.g:
+3. the field is devidied into "extras", seperated by "|||" (triple pipe), e.g:<br>
    `C1:: This is card number 1 |||
 C2:: This is card number 2 |||
 C3:: This is card number 3`
