@@ -42,4 +42,4 @@ for the advanced cloze cards, the field "Media" works in the same way, it is for
 ## Notes
 
 - The scripts are only tested on AnkiDroid because I don't have access to a PC :(, If any issues or incompatabilities arise please leave a comment and I will try to fix them!.
-- [Reddit Thread]()
+- [Reddit Thread](https://www.reddit.com/r/Anki/comments/1mn5c7x/simple_custom_notes_and_media_manager_for_multi/)
