@@ -2,13 +2,13 @@
 
 I think the most powerfull feature of anki cloze note types is the ability to produce multiple cards from a single note easily, But this comes with 2 main downsides (in my opinion):
 
-1. Because only one (or some) of the clozes are active in each card (inactive clozes are rendered in plain text), the inactive clozes will "spoil" the cards in which they are active, this has been partially alleviated by the randomization of the cards (not effective in small decks) and has been solved completely with addons that are designed just for this use case (cloze cards overlapping), of which my favorite is the script in this [post]().
+1. Because only one (or some) of the clozes are active in each card (inactive clozes are rendered in plain text), the inactive clozes will "spoil" the cards in which they are active, this has been partially alleviated by the randomization of the cards (not effective in small decks) and has been solved completely with addons that are designed just for this use case (cloze cards overlapping), of which my favorite is the script in this [post](https://www.reddit.com/r/Anki/comments/116nky2/simple_cloze_overlapper_template_for_anki_21/).
 2. This may be a matter of a personal proplem, I am an extensive user of "Back Extra" Field specially in cloze notes, it annoyed me in the past (before I started using cloze-overlapper) when my note (Back Extra content) is irrelevent to the active cloze (because it is intended to one of the inactive ones), But after using the overlapper it became worse because my note become irrelevent to the whole card (because I used the overlapper to hide the inactive cloze to which the note was written).
 
-So to solve this issue I wrote this simple js [script]() that goes into the back template, I made 2 versions of it:
+So to solve this issue I wrote this simple js [scripts](https://github.com/Ammar-Husain/anki-custom-media-and-notes/) that goes into the back template, I made 2 versions of it:
 
-1. a ready-to-go [version][./cloze-back-ready.html]: can be paste it directly into your "cloze" note type, no need to make a custom note type.
-2. slightly advacned [version][./cloze-back-advanced.html]: you have to make a custom note type (based on cloze) or change your existing cloze note type and add a field called "Media".
+1. a ready-to-go [version](./cloze-back-ready.html): can be paste it directly into your "cloze" note type, no need to make a custom note type.
+2. slightly advacned [version](./cloze-back-advanced.html): you have to make a custom note type (based on cloze) or change your existing cloze note type and add a field called "Media".
 
 - I also made a [version](./image-occlusion-back.html) for "Image-Occlusion" note type.
 
