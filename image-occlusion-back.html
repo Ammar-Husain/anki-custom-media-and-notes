@@ -1,0 +1,32 @@
+<br /><br />
+<div class="original-notes" hidden="">{{Back Extra}}</div>
+<div class="notes-container"></div>
+
+<script>
+  (function applyNotes() {
+    const activeCloze = document.querySelector(".cloze-highlight");
+    const cardOrd = activeCloze.getAttribute("data-ordinal");
+    const orgNotes = document.querySelector(".original-notes").innerHTML.trim();
+    const notes_container = document.querySelector(".notes-container");
+
+    if (orgNotes.length == 0) return;
+
+    const notes = orgNotes.split("|||");
+    const activeCardRegex = new RegExp(`^C${cardOrd}::`, "i");
+    for (let i = 0; i < notes.length; i++) {
+      note = notes[i].trim().replace(/^[<br>\s]+/, "");
+      if (
+        (note && !orgNotes.match(/C\d+?::/i)) ||
+        note.match(activeCardRegex) ||
+        note.match(/^G::/i)
+      ) {
+        let noteContent = note.replace(activeCardRegex, "");
+        noteContent = noteContent.replace(/G::/i, "");
+        noteElement = document.createElement("div");
+        noteElement.setAttribute("class", "note-box");
+        noteElement.innerHTML = `<span class='note-header'>NOTE</span><p>${noteContent}</p>`;
+        notes_container.appendChild(noteElement);
+      }
+    }
+  })();
+</script>
